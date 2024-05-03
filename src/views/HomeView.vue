@@ -108,7 +108,7 @@
                       ? "El código QR escaneado no está verificado"
                       : `El código QR fue verificado el ${formatDate(
                           detail.verified_at
-                        )} a las ${formatTime(detail.verified_at)}  ${detail.verified_at} `
+                        )} a las ${formatTime(detail.verified_at)}`
                   }}
                 </p>
                 <button
