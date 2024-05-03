@@ -171,6 +171,7 @@ import { ref, watchEffect, computed, onMounted } from "vue";
 import { api } from "../api/client";
 import { QrcodeStream } from "vue-qrcode-reader";
 import router from "../router";
+import moment from "moment";
 
 
 
@@ -254,11 +255,14 @@ const formatDate = (date) => {
 };
 
 const formatTime = (date) => {
+  let timer = moment.utc(date, moment.ISO_8601)
 
+  return timer.format('h:mm:ss A')
+  /*
   return new Date(date).toLocaleString("en-ES",{
     timeZone:"UTC",
   });
-  
+  */
 };
 /****API functions ***/
 const verifyCode = async () => {
