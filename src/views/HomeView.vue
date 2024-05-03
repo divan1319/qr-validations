@@ -254,7 +254,7 @@ const formatDate = (date) => {
 };
 
 const formatTime = (date) => {
-  alert(date)
+
   return new Date(date).toLocaleTimeString("en-ES");
   
 };
