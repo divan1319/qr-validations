@@ -256,7 +256,7 @@ const formatDate = (date) => {
 const formatTime = (date) => {
 
   return new Date(date).toLocaleString("en-ES",{
-    timeZone:"America/El_Salvador",
+    timeZone:"UTC",
   });
   
 };
