@@ -254,7 +254,7 @@ const formatDate = (date) => {
 };
 
 const formatTime = (date) => {
-  return new Date(date).toLocaleTimeString("en-US");
+  return new Date(date).toLocaleTimeString("en-ES");
 };
 /****API functions ***/
 const verifyCode = async () => {
